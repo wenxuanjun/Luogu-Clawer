@@ -98,18 +98,31 @@ Luogu里的这种僵尸题有几十个，所以没有耐心的童鞋可以使用
 ### 所有文件的用途解释
 
 >Clawer/get.sh #获取Luogu题目的htm源代码
+>
 >Clawer/go.py #转换源代码并写入数据库的主程序
+>
 >Clawer/fix.py #修复僵尸题的程序
+>
 >Clawer/tmp.htm #修复僵尸题的模板
+>
 >GetLuogu/Luogu.tar.gz #修改好僵尸题的Luogu题目的htm源代码
+>
 >Web/index.html #题目列表的前端
+>
 >Web/list.php #题目列表的后端
+>
 >Web/index.php #题目主体的前端
+>
 >Web/mysql.php #连接Mysql的程序
+>
 >Web/head.php #为了缩短index.php的产物
+>
 >Web/luogu.sql.gz #打包好的题目，导入数据库用
+>
 >Web/luogu.css #为了**稍微**好看一点而写的CSS
+>
 >Web/prism.css #高亮所用的CSS
+>
 >Web/prism.js #高亮所用的JavaScript
 
 ### 最后
