@@ -9,7 +9,7 @@ echo <<<LABEL
 <html lang="en">
 <head>
 LABEL;
-echo "<title>".$title."</title>";
+echo "<title>".$data["title"]."</title>";
 require_once("head.php");
 echo '<body>';
 echo '<div class="container" style="margin-top:30px">';
