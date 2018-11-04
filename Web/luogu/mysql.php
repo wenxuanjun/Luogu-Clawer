@@ -10,6 +10,8 @@ function getsql($go) {
     //数据库名
     $dbname = "luogu";
     
+    //简单防注入
+    $go = stripslashes($go);
     $idgo = $go-999;
     $con = mysqli_connect($servername, $username, $password, $dbname);
     $result = mysqli_query($con,"SELECT * FROM luogu WHERE id=$idgo");
