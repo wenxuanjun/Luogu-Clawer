@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="luogu/luogu.css">
+</head>
+<body>
+<div class="container" style="margin-top:30px">
+    <div class="card raised nicediv" id="list">
+    </div>
+</div>
+<script>
+    info=window.location.href;
+    len=info.length;
+    offset=info.indexOf("?");
+    sidinfo=info.substr(offset,len);
+    sids=sidinfo.split("=");
+    page=sids[1];
+    if(typeof(page)=="undefined")
+        page="1";
+    $.get("luogu/list.php?page="+page, function(data){
+        document.getElementById("list").innerHTML = data;
+    });
+</script>
+</body>
+</html>
