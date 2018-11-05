@@ -1,4 +1,4 @@
 #/bin/bash
 
 mkdir Luogu
-for ((i = 1000; i <= 1001; i++)); do wget https://www.luogu.org/problemnew/show/P$i -O Luogu/$i.htm; done
+for ((which = 1000; which <= 4954; i++)); do wget https://www.luogu.org/problemnew/show/P$which -O Luogu/$which.htm; done
